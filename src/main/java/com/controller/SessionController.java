@@ -20,9 +20,9 @@ public class SessionController {
 		return "Login";// Login.jsp
 	}
 
-	@RequestMapping(value = "forgetpassword", method = RequestMethod.GET)
+	@RequestMapping(value = "forgotpassword", method = RequestMethod.GET)
 	public String forgetPassword() {
-		return "ForgetPassword";
+		return "ForgotPassword";
 
 	}
 
@@ -30,6 +30,22 @@ public class SessionController {
 	public String  saveUser(UserBean user) {
 		//fn em pwd ==> bean 
 		System.out.println(user.getFirstName());
+		System.out.println(user.getEmail());
+		System.out.println(user.getPassword());
+		return "Login";
+	}
+	@RequestMapping(value="forgetPwd",method = RequestMethod.POST)
+	public String  forgetPwd(UserBean user) {
+		//fn em pwd ==> bean 
+		
+		System.out.println(user.getEmail());
+		
+		return "Login";
+	}
+	@RequestMapping(value="emPass",method = RequestMethod.POST)
+	public String  empass(UserBean user) {
+		//fn em pwd ==> bean 
+		
 		System.out.println(user.getEmail());
 		System.out.println(user.getPassword());
 		return "Login";

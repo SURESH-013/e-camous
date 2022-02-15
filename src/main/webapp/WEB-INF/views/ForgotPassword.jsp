@@ -8,5 +8,9 @@
 </head>
 <body>
 <h2>Forgot password</h2>
+    <form action="forgetPwd" method="post">
+    	Email : <input type="email" name="email" /><br>
+		<br> <input type="submit" value="submit" />
+    </form>
 </body>
 </html>
