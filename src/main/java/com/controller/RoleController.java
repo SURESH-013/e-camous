@@ -16,7 +16,6 @@ import com.dao.RoleDao;
 
 	@Controller
 	public class RoleController {
-		@Autowired
 		RoleDao roleDao;
 //		@RequestMapping(value ="newrole",method = RequestMethod.GET)
 		@GetMapping("/newrole")
