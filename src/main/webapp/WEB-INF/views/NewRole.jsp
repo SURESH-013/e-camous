@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Testkiller</title>
 </head>
 <body>
 <h2>New Role</h2>
-	<form action="saverole" method="post">
-		RoleName : <input type="text" name="roleName" /><br>
-		<br> <input type="submit" value="Add Role" />
+ <form method="post" action="saverole">
+		Rolename: <input type="text" name="roleName"><br> <br>
+		<input type="submit" value="Add Role">
 	</form>
 </body>
 </html>
